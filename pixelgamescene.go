@@ -3,7 +3,6 @@ package pixelframework
 import (
 	"fmt"
 
-	"github.com/gopxl/pixel/v2"
 	"github.com/gopxl/pixel/v2/backends/opengl"
 )
 
@@ -13,11 +12,7 @@ type PixelGameScene interface {
 	destroy()
 }
 
-func (scene PixelGameScene) preRender() {
-
-}
-
-func Hello(name String) string {
+func Hello(name string) string {
 	message := fmt.Sprintf("Hi, %v. Welcome!", name)
 	return message
 }
